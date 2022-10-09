@@ -834,8 +834,8 @@ ul.work li.active {
     color: #fff;
 }
 
-.social-link-area ul li a.facebook {
-    background: #4C6198;
+.social-link-area ul li a.linkedin {
+    background: #0A66C2;
 }
 
 .social-link-area ul li a.twitter {
@@ -934,7 +934,7 @@ ul.work li.active {
 
 .footer-area {
     background: #000;
-    padding: 130px 0px;
+    padding: 75px 0px;
 }
 
 .footer-area p {
