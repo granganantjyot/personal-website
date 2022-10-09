@@ -32,6 +32,13 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 
+:root {
+    --accent-color: #273769;
+    --alt-accent-color: #070028;
+    /* --accent-color: rgb(0, 0, 76); */
+  }
+
+
 body {
     font-size: 14px;
     font-weight: 300;
@@ -103,6 +110,7 @@ fieldset {
 
 .section-title {
     margin-bottom: 60px;
+    color: var(--accent-color);
 }
 
 .section-title h2 {
@@ -120,7 +128,7 @@ fieldset {
 */
 
 .preloader {
-    background: #000;
+    background: var(--alt-accent-color);
     bottom: 0;
     left: 0;
     position: fixed;
@@ -191,7 +199,7 @@ fieldset {
 .welcome-image-area {
     position: relative;
     height: 100%;
-    background: url(../images/bg/bg.jpg);
+    background: navy;
     background-size: cover;
     z-index: 1;
 }
@@ -207,10 +215,17 @@ fieldset {
     z-index: -1;
 }
 
+.intro-img{
+    width: 26%; 
+    display: inline-block;
+    margin-right: -15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .particle-bg {
     position: relative;
     height: 100%;
-    background: url(../images/bg/bg2.jpg);
     background-size: cover;
     z-index: 1;
 }
@@ -365,7 +380,7 @@ fieldset {
 }
 
 .mainmenu .navbar-nav li a:hover {
-    background: none;
+    background: rgba(255, 255, 255, 0.345);
     color: #fff;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -386,7 +401,7 @@ fieldset {
 .menu-bg {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    background: #000;
+    background: var(--accent-color);
 }
 
 .menu-bg .logo {
@@ -521,7 +536,7 @@ fieldset {
 }
 
 .work-experience-area .section-title h2 {
-    color: #333;
+    color: var(--accent-color);
 }
 
 .single-experience {
