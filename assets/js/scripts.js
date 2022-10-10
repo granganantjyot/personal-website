@@ -94,9 +94,9 @@ Version      : 1.0
 
         var magnifPopup = function () {
             $('.work-popup').magnificPopup({
-                type: 'image',
-                removalDelay: 300,
-                mainClass: 'mfp-with-zoom',
+                type: 'inline',
+                removalDelay: 0,
+                mainClass: 'mfp-fade',
                 gallery: {
                     enabled: true
                 },
