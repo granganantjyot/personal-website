@@ -743,25 +743,28 @@ ul.work li.active {
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
+    margin: none;
 }
 
-.work-popup-style h1{
-    color: var(--accent-color);
-}
-
-#work-popup-style-button-container{
+#work-popup-style-button-container {
     background-color: var(--accent-color);
-    cursor: pointer;  
+    cursor: pointer;
     width: fit-content;
 }
 
-.work-popup-style .work-svg{
-    height: 30px;
-    width: 30px;
-    vertical-align: middle;
+.work-popup-style h1 {
+    color: var(--accent-color);
 }
 
-.work-popup-style .work-svg path{
+.work-popup-style .work-svg {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: -5px;
+    margin-right: 5px;
+}
+
+.work-popup-style .work-svg path {
     fill: white;
 }
 
