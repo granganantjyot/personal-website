@@ -735,7 +735,7 @@ ul.work li.active {
 }
 
 .work-popup-style .work-popup-style-button {
-    background-color: var(--accent-color);
+    background-color: transparent;
     border: none;
     color: white;
     padding: 5px;
@@ -750,9 +750,13 @@ ul.work li.active {
     background-color: var(--accent-color);
     cursor: pointer;
     width: fit-content;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
 }
 
 .work-popup-style h1 {
+    margin: none;
     color: var(--accent-color);
 }
 
@@ -762,6 +766,7 @@ ul.work li.active {
     vertical-align: middle;
     margin-left: -5px;
     margin-right: 5px;
+    background-color: transparent;
 }
 
 .work-popup-style .work-svg path {
