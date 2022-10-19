@@ -570,21 +570,22 @@ fieldset {
     margin-bottom: 0;
 }
 
-#experience .single-experience span{
+/* #experience .single-experience span{
     float: right;
     margin-top: -30px;
     font-size: 12px;
     font-weight: 300;
     border-bottom: 1px solid #000;
-}
+} */
 
-#involvement .single-experience img{
+.single-experience img{
     float: right;
-    margin-top: -50px;
+    margin-top: -43px;
     font-size: 12px;
     font-weight: 300;
-    width: 47.5px;
-    height: auto;
+    width: auto;
+    height: 35px;
+    text-align: center;
 }
 
 .involvement-experience-link{    
