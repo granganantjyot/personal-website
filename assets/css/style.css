@@ -1,10 +1,4 @@
-/*
-* ----------------------------------------------------------------------------------------
-Author       : wordpressboss
-Template Name: Pitter - Personal Portfolio Template
-Version      : 1.0
-* ----------------------------------------------------------------------------------------
-*/
+
 
 
 /*
@@ -591,13 +585,24 @@ fieldset {
 .involvement-experience-link{    
     font-weight: 500;
     cursor: pointer;
-    color: black;
+    color: var(--accent-color)
 }
 
-.involvement-experience-link:hover{
-    color: var(--accent-color);
+#wod-involvement-link:hover{
+    color: #1494a3;
 }
 
+#fbla-involvement-link:hover{
+    color: #bc2c34;
+}
+
+#hack-club-involvement-link:hover{
+    color: #eb3e4a;
+}
+
+#educationist-involvement-link:hover{
+    color: #0ff6bc;
+}
 
 /*
 * ----------------------------------------------------------------------------------------
