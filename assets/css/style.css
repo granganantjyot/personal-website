@@ -29,6 +29,7 @@
 :root {
     --accent-color: #273769;
     --alt-accent-color: #070028;
+    --particles-bg-color: navy;
     /* --accent-color: rgb(0, 0, 76); */
 }
 
@@ -195,7 +196,7 @@ fieldset {
 .welcome-image-area {
     position: relative;
     height: 100%;
-    background: navy;
+    background: var(--particles-bg-color);
     background-size: cover;
     z-index: 1;
 }
