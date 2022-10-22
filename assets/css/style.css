@@ -1,10 +1,4 @@
-/*
-* ----------------------------------------------------------------------------------------
-Author       : wordpressboss
-Template Name: Pitter - Personal Portfolio Template
-Version      : 1.0
-* ----------------------------------------------------------------------------------------
-*/
+
 
 
 /*
@@ -31,6 +25,14 @@ Version      : 1.0
 * 01.GLOBAL STYLE
 * ----------------------------------------------------------------------------------------
 */
+
+:root {
+    --accent-color: #273769;
+    --alt-accent-color: #070028;
+    --particles-bg-color: navy;
+    /* --accent-color: rgb(0, 0, 76); */
+}
+
 
 body {
     font-size: 14px;
@@ -103,6 +105,7 @@ fieldset {
 
 .section-title {
     margin-bottom: 60px;
+    color: var(--accent-color);
 }
 
 .section-title h2 {
@@ -120,7 +123,7 @@ fieldset {
 */
 
 .preloader {
-    background: #000;
+    background: var(--alt-accent-color);
     bottom: 0;
     left: 0;
     position: fixed;
@@ -153,6 +156,7 @@ fieldset {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -164,6 +168,7 @@ fieldset {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -191,7 +196,7 @@ fieldset {
 .welcome-image-area {
     position: relative;
     height: 100%;
-    background: url(../images/bg/bg.jpg);
+    background: var(--particles-bg-color);
     background-size: cover;
     z-index: 1;
 }
@@ -207,10 +212,17 @@ fieldset {
     z-index: -1;
 }
 
+.intro-img {
+    width: 26%;
+    display: inline-block;
+    margin-right: -15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .particle-bg {
     position: relative;
     height: 100%;
-    background: url(../images/bg/bg2.jpg);
     background-size: cover;
     z-index: 1;
 }
@@ -283,22 +295,24 @@ fieldset {
 
 @-webkit-keyframes home-arrow-down {
     from {
-        -webkit-transform: translate3d( 0, 0px, 0);
-        transform: translate3d( 0, 0px, 0);
+        -webkit-transform: translate3d(0, 0px, 0);
+        transform: translate3d(0, 0px, 0);
         filter: alpha(opacity=0);
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
+
     10% {
-        -webkit-transform: translate3d( 0, 5px, 0);
-        transform: translate3d( 0, 5px, 0);
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
         filter: alpha(opacity=100);
         opacity: 1;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
+
     to {
-        -webkit-transform: translate3d( 0, 30px, 0);
-        transform: translate3d( 0, 30px, 0);
+        -webkit-transform: translate3d(0, 30px, 0);
+        transform: translate3d(0, 30px, 0);
         filter: alpha(opacity=0);
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -307,22 +321,24 @@ fieldset {
 
 @keyframes home-arrow-down {
     from {
-        -webkit-transform: translate3d( 0, 0px, 0);
-        transform: translate3d( 0, 0px, 0);
+        -webkit-transform: translate3d(0, 0px, 0);
+        transform: translate3d(0, 0px, 0);
         filter: alpha(opacity=0);
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     }
+
     10% {
-        -webkit-transform: translate3d( 0, 5px, 0);
-        transform: translate3d( 0, 5px, 0);
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
         filter: alpha(opacity=100);
         opacity: 1;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
+
     to {
-        -webkit-transform: translate3d( 0, 30px, 0);
-        transform: translate3d( 0, 30px, 0);
+        -webkit-transform: translate3d(0, 30px, 0);
+        transform: translate3d(0, 30px, 0);
         filter: alpha(opacity=0);
         opacity: 0;
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -365,7 +381,7 @@ fieldset {
 }
 
 .mainmenu .navbar-nav li a:hover {
-    background: none;
+    background: rgba(255, 255, 255, 0.345);
     color: #fff;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -386,7 +402,7 @@ fieldset {
 .menu-bg {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    background: #000;
+    background: var(--accent-color);
 }
 
 .menu-bg .logo {
@@ -521,7 +537,7 @@ fieldset {
 }
 
 .work-experience-area .section-title h2 {
-    color: #333;
+    color: var(--accent-color);
 }
 
 .single-experience {
@@ -545,18 +561,49 @@ fieldset {
     font-family: 'Poppins', sans-serif;
 }
 
-.single-experience span {
+.single-experience p {
+    margin-bottom: 0;
+}
+
+/* #experience .single-experience span{
     float: right;
     margin-top: -30px;
     font-size: 12px;
     font-weight: 300;
     border-bottom: 1px solid #000;
+} */
+
+.single-experience img{
+    float: right;
+    margin-top: -43px;
+    font-size: 12px;
+    font-weight: 300;
+    width: auto;
+    height: 35px;
+    text-align: center;
 }
 
-.single-experience p {
-    margin-bottom: 0;
+.involvement-experience-link{    
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--accent-color)
 }
 
+#wod-involvement-link:hover{
+    color: #1494a3;
+}
+
+#fbla-involvement-link:hover{
+    color: #bc2c34;
+}
+
+#hack-club-involvement-link:hover{
+    color: #eb3e4a;
+}
+
+#educationist-involvement-link:hover{
+    color: #0ff6bc;
+}
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -596,10 +643,6 @@ fieldset {
 * 07.WORK CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
-
-.work {
-    background: #f9f9f9;
-}
 
 .work-inner .mix {
     display: none;
@@ -705,6 +748,96 @@ ul.work li.active {
     transition: .3s;
 }
 
+.work-popup-style {
+    position: relative;
+    /* background: #F9F9F9; */
+    background: white;
+    padding: 20px;
+    width: auto;
+    max-width: 900px;
+    max-height: fit-content;
+    margin: 20px auto;
+    display: flex;
+}
+
+.work-popup-style .work-popup-style-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: none;
+}
+
+#work-popup-style-button-container {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.work-popup-style h2 {
+    margin-top: 10px !important;
+    color: var(--accent-color);
+}
+
+.work-popup-style .work-svg {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: -5px;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+.work-popup-style .work-svg path {
+    fill: white;
+}
+
+/* Animations for work-popup */
+/* overlay at start */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -782,7 +915,7 @@ ul.work li.active {
 */
 
 .social-design-area {
-    background: #F9F9F9;
+    background: white;
     padding: 80px 0px;
 }
 
@@ -792,6 +925,7 @@ ul.work li.active {
     text-transform: capitalize;
     font-size: 40px;
     margin-bottom: 30px;
+    color: var(--accent-color);
 }
 
 .social-link-area ul {
@@ -812,6 +946,7 @@ ul.work li.active {
     color: #fff;
     border-radius: 50%;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .social-link-area ul li a:hover {
@@ -819,20 +954,14 @@ ul.work li.active {
     color: #fff;
 }
 
-.social-link-area ul li a.facebook {
-    background: #4C6198;
+.social-link-area ul li a.linkedin {
+    background: #0A66C2;
 }
-
-.social-link-area ul li a.twitter {
-    background: #67CEEF;
+.social-link-area ul li a.envelope {
+    background: #5B659D;
 }
-
-.social-link-area ul li a.dribbble {
-    background: #C62664;
-}
-
-.social-link-area ul li a.instagram {
-    background: #FCD273;
+.social-link-area ul li a.github {
+    background: #24292e;
 }
 
 
@@ -918,8 +1047,8 @@ ul.work li.active {
 */
 
 .footer-area {
-    background: #000;
-    padding: 130px 0px;
+    background: var(--accent-color);
+    padding: 40px 0px;
 }
 
 .footer-area p {
@@ -928,11 +1057,11 @@ ul.work li.active {
     color: #fafafa;
 }
 
-.fotter-email {
+.footer-email {
     text-align: right;
 }
 
-.fotter-email p i {
+.footer-email p i {
     margin-right: 10px;
 }
 
