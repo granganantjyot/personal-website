@@ -956,17 +956,8 @@ ul.work li.active {
 .social-link-area ul li a.linkedin {
     background: #0A66C2;
 }
-
-.social-link-area ul li a.twitter {
-    background: #67CEEF;
-}
-
-.social-link-area ul li a.dribbble {
-    background: #C62664;
-}
-
-.social-link-area ul li a.instagram {
-    background: #FCD273;
+.social-link-area ul li a.envelope {
+    background: #5B659D;
 }
 .social-link-area ul li a.github {
     background: #24292e;
@@ -1055,7 +1046,7 @@ ul.work li.active {
 */
 
 .footer-area {
-    background: #000;
+    background: var(--accent-color);
     padding: 50px 0px;
 }
 
