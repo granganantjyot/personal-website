@@ -605,6 +605,15 @@ fieldset {
     color: #0ff6bc;
 }
 
+#resume-view-link{
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+}
+#resume-view-link:hover{
+    color: #a3cbf3;
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 06.SERVICE CSS STYLE
@@ -962,6 +971,9 @@ ul.work li.active {
 }
 .social-link-area ul li a.github {
     background: #24292e;
+}
+.social-link-area ul li a.resume {
+    background: #273769;
 }
 
 
