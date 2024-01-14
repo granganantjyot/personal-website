@@ -605,12 +605,12 @@ fieldset {
     color: #0ff6bc;
 }
 
-#resume-view-link{
+#footer-link{
     font-weight: 500;
     cursor: pointer;
     color: #fff;
 }
-#resume-view-link:hover{
+#footer-link:hover{
     color: #a3cbf3;
 }
 
