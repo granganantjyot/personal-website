@@ -485,14 +485,21 @@ fieldset {
     margin-bottom: 30px;
 }
 
+.about-service ul {
+    display: grid;
+}
+
+@media (min-width: 768px) {
+    .about-service ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 50px;
+    }
+}
+
 .about-service ul li {
-    width: 40%;
-    float: left;
     margin-bottom: 25px;
     color: #333;
     border-bottom: 1px dotted #ccc;
-    display: inline-block;
-    margin-right: 50px;
     padding-bottom: 10px;
 }
 
@@ -546,6 +553,17 @@ fieldset {
     margin-bottom: 20px;
 }
 
+@media (min-width: 992px) {
+    .experience-row,
+    .experience-row > .col-md-6 {
+        display: flex;
+    }
+
+    .experience-row .single-experience {
+        flex: 1;
+    }
+}
+
 .single-experience h2 {
     font-size: 12px;
     text-transform: uppercase;
@@ -553,6 +571,12 @@ fieldset {
     color: #232323;
     font-weight: 400;
     letter-spacing: 2px;
+}
+
+@media (max-width: 359px) {
+    .fable-experience h2 {
+        padding-right: 45px;
+    }
 }
 
 .single-experience h3 {
@@ -971,9 +995,6 @@ ul.work li.active {
 }
 .social-link-area ul li a.github {
     background: #24292e;
-}
-.social-link-area ul li a.resume {
-    background: #273769;
 }
 
 
